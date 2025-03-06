@@ -40,7 +40,7 @@ export default function Welcome() {
     }, []);
 
     const validateCertificateNumber = (number: string): boolean => {
-        // Format should be CERT-YYYY-XXXXX
+
         const regex = /^CERT-\d{4}-\d{5}$/;
         return regex.test(number);
     };
@@ -120,7 +120,7 @@ export default function Welcome() {
             const formattedResult: VerificationResult = {
                 exists: data.exists,
                 isValid: data.isValid,
-                issuer: 'Verified Institution', // Since we're not using blockchain, we can set a default issuer
+                issuer: 'Verified Institution', 
                 recipient: data.recipientAddress,
                 issuedAt: data.issuedAt.toString(),
                 courseId: data.courseId,
