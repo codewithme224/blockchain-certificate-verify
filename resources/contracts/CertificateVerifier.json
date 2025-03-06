@@ -1,0 +1,99 @@
+{
+    "contractName": "CertificateVerifier",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "certificateNumber",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "courseId",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "courseName",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "recipientName",
+                    "type": "string"
+                }
+            ],
+            "name": "issueCertificate",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "certificateNumber",
+                    "type": "string"
+                }
+            ],
+            "name": "verifyCertificate",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "certificateNumber",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "courseId",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "courseName",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "recipientName",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "issuedAt",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CertificateVerifier.Certificate",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "networks": {
+        "11155111": {
+            "address": "0x0000000000000000000000000000000000000000"
+        }
+    }
+} 
