@@ -7,7 +7,13 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.tsx'],
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.tsx',
+                'resources/js/Pages/Welcome.tsx',
+                'resources/js/Pages/dashboard.tsx',
+                'resources/js/Pages/verify.tsx'
+            ],
             ssr: 'resources/js/ssr.tsx',
             refresh: true,
         }),
@@ -20,6 +26,7 @@ export default defineConfig({
     resolve: {
         alias: {
             'ziggy-js': resolve(__dirname, 'vendor/tightenco/ziggy'),
+            '@': resolve(__dirname, 'resources/js'),
         },
     },
 });
