@@ -15,7 +15,7 @@ interface VerificationResult {
     recipientName: string;
 }
 
-export default function Verify() {
+export default function Welcome() {
     const [certificateNumber, setCertificateNumber] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
